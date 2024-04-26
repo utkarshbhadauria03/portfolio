@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Utkarsh-Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: rgb(0, 0, 33);
+        color: white;
+        font-family: "Poppins", sans-serif;
+      }
+      .left {
+        font-size: 1.5rem;
+      }
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 100px;
+        background-color: rgb(2, 2, 50);
+      }
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        list-style: none;
+        margin: 0px 23px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+      }
+      nav ul li a:hover {
+        color: rgb(82, 142, 203);
+        font-size: 1.01rem;
+      }
+      main hr {
+        border: 0;
+        height: 1.2px;
+        background: rgb(47, 111, 138);
+        margin: 17px 84px;
+      }
+
+      #firstSection {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      #firstSection > div {
+        width: 30%;
+      }
+      .leftSection {
+        font-size: 3rem;
+      }
+
+      .rightSection img {
+        width: 80%;
+        margin: 50px 0;
+      }
+      .purple {
+        color: rgb(22, 98, 197);
+      }
+      .text-gray {
+        color: gray;
+      }
+      #element {
+        color: rgb(200, 107, 26);
+      }
+
+      #secondSection {
+        max-width: 80vw;
+        margin: auto;
+      }
+      #secondSection h1 {
+        font-size: 1.9rem;
+        color: rgb(21, 125, 210);
+      }
+      .box-1 {
+        border: 2px solid rgb(6, 167, 236);
+        height: 480px;
+        width: 80vw;
+        font-size: 1.2rem;
+      }
+      .box-2 {
+        border: 2px solid rgb(19, 135, 38);
+        height: 480px;
+        width: 80vw;
+        font-size: 1.2rem;
+        color: white;
+      }
+
+      .box-1 ul {
+        margin: 15px 25px;
+        padding: 20px 20px 20px 20px;
+      }
+
+      #element-1 {
+        color: rgb(25, 122, 93);
+        font-size: 1.2rem;
+      }
+      #element-2 {
+        color: rgb(9, 222, 237);
+        font-size: 1.2rem;
+      }
+      #thirdSection {
+        margin: 25px 125px;
+        font-size: 1.2rem;
+        color: rgb(227, 134, 13);
+      }
+      #fourSection {
+        margin: 40px 125px;
+        font-size: 1.2rem;
+        color: rgb(13, 161, 224);
+      }
+    </style>
+  </head>
+  <body>
+    <header id="header">
+      <nav>
+        <div class="left">Utkarsh' Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="#header">Home</a></li>
+            <li><a href="#thirdSection">About</a></li>
+            <li><a href="#secondSection">My Skills</a></li>
+            <li><a href="/">Projects</a></li>
+            <li><a href="/">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="firstSection">
+        <div class="leftSection">
+          Hey,I am <span class="purple">Utkarsh</span>
+          <div>and I am a passionate</div>
+          <span id="element"></span>
+        </div>
+        <div class="rightSection">
+          <img src="arjun.jpg" alt="arjun's pic" />
+        </div>
+      </section>
+      <hr />
+      <section id="secondSection">
+        <h1>My Skills</h1>
+        <span id="element-1"> </span>
+        <div class="box-1">
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JAVASCRIPT</li>
+            <li>MONGODB</li>
+            <li>EXPRESS.JS</li>
+            <li>REACT.JS</li>
+            <li>NODE.JS</li>
+          </ul>
+        </div>
+      </section>
+      <hr />
+      <section id="thirdSection">
+        <h1>About Me</h1>
+        <span id="element-2"></span>
+        <div class="box-2">
+          <pre>
+ 
+ Hey,I am Utkarsh Bhadauria and I belong to Kanpur.Currently I am in Greater Noida and pursuing
+ Btech from AKTU. I have done my Highschool and Intermediate from Up board.In Highschool I have
+ scored 74.33% and in intermediate I have scored 74.80% .
+ 
+ I love to code that's why I have taken Computer Science as my stream in B.tech</pre>
+          
+        </div>
+      </section>
+      <hr>
+      <section id="fourSection">
+        <h1>Contact </h1>
+      </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+    <script>
+      var typed = new Typed("#element", {
+        strings: [
+          "Web Developer",
+          "UI/UX Designer",
+          "Web Designer",
+          "Video Editor",
+        ],
+        typeSpeed: 50,
+      });
+    </script>
+    <script>
+      var typed = new Typed("#element-1", {
+        strings: ["What I have learned till now"],
+        typeSpeed: 100,
+      });
+    </script>
+    <script>
+      var typed = new Typed("#element-2", {
+        strings: ["this is the information about me"],
+        typeSpeed: 150,
+      });
+    </script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  </body>
+</html>
